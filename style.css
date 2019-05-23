@@ -30,5 +30,8 @@ h1, h2, h3 {
   color: #ffffff;
   position: absolute;
   bottom: 52px;
-  background: #00000075;
+}
+.title {
+  font-size: 3em;
+  font-weight: normal;
 }
