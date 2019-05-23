@@ -19,4 +19,6 @@ h1, h2, h3 {
   display: inline-block;
   text-align: center;
   width: 100%;
+  padding: 275px 0;
+  color: #ff5722;
 }
