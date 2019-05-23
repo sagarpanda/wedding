@@ -2,6 +2,9 @@ html, body {
   height: 100%;
   margin: 0;
 }
+h1, h2, h3 {
+  font-family: 'Playball', cursive;
+}
 .main {
   position: absolute;
   width: 100%;
@@ -12,8 +15,8 @@ html, body {
   background-position: top;
   opacity: 0.7;
 }
-h1, h2, h3 {
-  font-family: 'Playball', cursive;
+.widen .main {
+  background-size: 100% auto;
 }
 .content {
   text-align: center;
