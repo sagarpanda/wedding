@@ -31,7 +31,24 @@ h1, h2, h3 {
   position: absolute;
   bottom: 52px;
 }
-.title {
+.content .title {
   font-size: 3em;
   font-weight: normal;
+}
+
+.remaining-time .time-sec {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  margin-bottom: 15px;
+  height: 55px;
+  width: 70px;
+  padding-top: 15px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+}
+.remaining-time .time-sec .title {
+  font-size: 1.5em;
+  line-height: 1;
+  display: block;
 }

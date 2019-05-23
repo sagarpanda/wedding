@@ -12,13 +12,45 @@
         var classList = document.body.classList;
         if (ratio > 2) { classList.add('widen'); } else { classList.remove('widen'); }
       }
-      document.addEventListener("DOMContentLoaded", winResize);
+      document.addEventListener("DOMContentLoaded", function() {
+        winResize();
+        var countdownElm = document.querySelectorAll('#clock .title');
+        var countDownDate = new Date("Jun 13, 2019 09:30:00").getTime();
+
+        var x = setInterval(function() {
+
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          countdownElm[0].textContent = days;
+          countdownElm[1].textContent = hours;
+          countdownElm[2].textContent = minutes;
+          countdownElm[3].textContent = seconds;
+          if (distance < 0) {
+            clearInterval(x);
+            // document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      });
     </script>
   </head>
   <body onresize="winResize()">
     <div class="main"></div>
     <div class="shadow"></div>
     <div class="content">
+
+      <div class="remaining-time">
+        <div id="clock">
+          <div class="time-sec"><span class="title">00</span> days </div>
+          <div class="time-sec"><span class="title">00</span> hours </div>
+          <div class="time-sec"><span class="title">00</span> minutes </div>
+          <div class="time-sec"><span class="title">00</span> seconds </div></div>
+      </div>
       <h1 class="title">Sweta <i class="icon icon-heart">weds</i> Sagar</h1>
       <p>On 13th June at Kamlesh Continental, Angul</p>
     </div>
