@@ -10,7 +10,7 @@ html, body {
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: top;
-  opacity: 0.2;
+  opacity: 0.7;
 }
 h1, h2, h3 {
   font-family: 'Playball', cursive;
@@ -18,8 +18,9 @@ h1, h2, h3 {
 .content {
   text-align: center;
   width: 100%;
-  padding: 14% 0 0;
-  color: #ff5722;
+  margin: 14% 0 0;
+  color: #ffffff;
   position: absolute;
   bottom: 52px;
+  background: #00000075;
 }
