@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(IMG_2179.JPG);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 0.2;
+}
+h1, h2, h3 {
+  font-family: 'Playball', cursive;
+}
+.content {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
