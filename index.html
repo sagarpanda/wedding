@@ -10,7 +10,7 @@
       function winResize() {
         var ratio = window.innerWidth/window.innerHeight;
         var classList = document.body.classList;
-        if (ratio > 2) { classList.add('widen'); } else { classList.remove('widen'); }
+        if (ratio > 0.75) { classList.add('widen'); } else { classList.remove('widen'); }
       }
       document.addEventListener("DOMContentLoaded", function() {
         winResize();
